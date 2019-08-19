@@ -13,7 +13,7 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
 
     private static final String DATABASE_NAME = "exp.db";
     public final static String TABLE="category";
-    private static final int DATABASE_VERSION = 11;
+    private static final int DATABASE_VERSION = 16;
 
     // Database creation sql statement
     private static final String DATABASE_CREATE_CONVERSATIONS = "create table category( _id integer primary key AUTOINCREMENT,category text not null);";

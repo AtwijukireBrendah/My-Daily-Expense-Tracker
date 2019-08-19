@@ -74,8 +74,10 @@ public class Dashboard extends Fragment {
         }
         if(check_limit>Integer.parseInt(set_limit)){
             limittext.setText("Limit of "+set_limit+" Has been Exceeded");
+            limittext.setTextColor(getResources().getColor(R.color.red));
         }else{
             limittext.setText("You are still within the limit");
+            limittext.setTextColor(getResources().getColor(R.color.green));
         }
         PieChartData pieChartData = new PieChartData(pieData);
         pieChartData.setHasLabels(true).setValueLabelTextSize(14);
